@@ -1,0 +1,40 @@
+
+
+# Write a Python program to find those numbers which are divisible by 7 and multiple of 5, 
+# between 1500 and 2700 (both included).
+
+output = []
+for x in range(1500,2701):
+    if (x % 7 == 0) and (x % 5 == 0):
+        output.append(x)
+print(output)
+
+
+
+# Write a Python program to convert temperatures to and from celsius, fahrenheit.
+
+
+temp = input("input the temperature you like to convert?:")
+degree = int(temp[:1])
+i_convention = temp[-1]
+
+if i_convention.upper() == "C":
+    result = int(round((9 * degree) / 5 + 32))
+    o = "F"
+elif i_convention.upper() == "F":
+    result = int(round((degree - 32) * 5 / 9))
+    o = "C"
+else:
+    print("Input the valid temp.")
+    quit()
+print("the temperature in", o, "is",result, "degrees.")
+
+
+# Write a Python program to guess a number between 1 to 9
+import random
+guess = int(input("Please enter a number:"))
+num = random.randint(1,10)
+while guess != num:
+    guess = int(input("try again:"))
+print("Well guessed.")
+
