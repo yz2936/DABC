@@ -1,0 +1,26 @@
+# list comprehension
+a = [1,2,3,4]
+out = []
+for number in a:
+    out.append(number**2)
+print(out)
+
+# lambda function
+square = lambda v:v**2
+print(square(5))
+
+# map 
+a = [1,2,3,4,5]
+new_list = list(map(lambda x:x*5, a))
+print(new_list)
+
+#filter
+a = [1,2,3,4,5]
+new_list = list(filter(lambda x:x >= 3, a))
+print(new_list)
+
+#arange
+np.arange(1,10,3)
+
+#linspace
+np.linspace(1,10, num = 10)
